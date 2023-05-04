@@ -15,8 +15,7 @@ public enum Areas {
 				return false;
 			}
 		}
-	}
-	,
+	},
 	DESK{
 		public String getArea(){
 			return "desk";

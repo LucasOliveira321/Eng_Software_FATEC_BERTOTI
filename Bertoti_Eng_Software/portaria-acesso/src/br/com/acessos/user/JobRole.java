@@ -44,6 +44,7 @@ public enum JobRole {
 			ArrayList<String> permissions = new ArrayList<>();
 			permissions.add(Areas.WAREHOUSE.getArea());
 			permissions.add(Areas.OPERATIONS.getArea());
+			permissions.add(Areas.RESTAURANT.getArea());
 			return permissions;
 		}
 	};
