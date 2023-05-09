@@ -3,13 +3,9 @@ package br.com.acessos.areas;
 import br.com.acessos.user.User;
 
 public enum Areas {
-	RESTAURANT{
-		public String getArea(){
-			return "restaurant";
-		}
-		
-		public boolean aproveAcess(User user, Areas area) {
-			if(user.getPermissions().contains(area.getArea())) {
+	RESTAURANT{	
+		public boolean aproveAcess(User user) {
+			if(user.getPermissions().contains(RESTAURANT.toString())) {
 				return true;
 			}else {
 				return false;
@@ -17,11 +13,8 @@ public enum Areas {
 		}
 	},
 	DESK{
-		public String getArea(){
-			return "desk";
-		}
-		public boolean aproveAcess(User user, Areas area) {
-			if(user.getPermissions().contains(area.getArea())) {
+		public boolean aproveAcess(User user) {
+			if(user.getPermissions().contains(DESK.toString())) {
 				return true;
 			}else {
 				return false;
@@ -29,11 +22,8 @@ public enum Areas {
 		}
 	},
 	WAREHOUSE{
-		public String getArea(){
-			return "warehouse";
-		}
-		public boolean aproveAcess(User user, Areas area) {
-			if(user.getPermissions().contains(area.getArea())) {
+		public boolean aproveAcess(User user) {
+			if(user.getPermissions().contains(WAREHOUSE.toString())) {
 				return true;
 			}else {
 				return false;
@@ -41,11 +31,8 @@ public enum Areas {
 		}
 	},
 	OPERATIONS{
-		public String getArea(){
-			return "operations";
-		}
-		public boolean aproveAcess(User user, Areas area) {
-			if(user.getPermissions().contains(area.getArea())) {
+		public boolean aproveAcess(User user) {
+			if(user.getPermissions().contains(OPERATIONS.toString())) {
 				return true;
 			}else {
 				return false;
@@ -53,6 +40,6 @@ public enum Areas {
 		}
 	};
 	
-	public abstract String getArea();
-	public abstract boolean aproveAcess(User user, Areas area);
+	
+	public abstract boolean aproveAcess(User user);
 }
