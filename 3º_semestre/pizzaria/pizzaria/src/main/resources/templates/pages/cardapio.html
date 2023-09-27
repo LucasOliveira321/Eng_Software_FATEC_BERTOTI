@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="en"
-      xmlns:th="http://thymeleaf.org">
+<html lang="pt-br"
+      xmlns:th="http://thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{template.html}"
+>
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" th:href="@{/css/reset.css}">
-    <link rel="stylesheet" th:href="@{/css/style.css}">
     <title>Menu</title>
 </head>
-    <body>
+<body>
+    <div layout:fragment="conteudo">
         <div class="header">
             <img class="logo" th:src="@{/image/logoPizzaColorida.jpg}">
         </div>
@@ -89,5 +90,6 @@
         <footer>
             <p>&copy; 2023 Pizzaria Daily Fresh. Todos os direitos reservados.</p>
         </footer>
-    </body>
+    </div>
+</body>
 </html>
