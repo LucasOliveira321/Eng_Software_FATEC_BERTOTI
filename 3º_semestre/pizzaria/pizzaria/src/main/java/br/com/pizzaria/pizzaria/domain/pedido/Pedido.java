@@ -17,7 +17,7 @@ public class Pedido {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    @OneToMany
+    @ManyToOne(fetch = FetchType.LAZY)
     private Usuario usuario_id;
     @OneToMany(mappedBy = "pedido", cascade = CascadeType.ALL)
     private List<ItensPedido> itens;
