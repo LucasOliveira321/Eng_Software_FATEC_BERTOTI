@@ -11,21 +11,14 @@
     <div layout:fragment="conteudo">
         <header>
             <h1>Pizzaria Daily Fresh</h1>
-<!--            <nav>-->
-<!--                <ul>-->
-<!--                    <li><a href="#inicio">Inicio</a></li>-->
-<!--                    <li><a href="#menu">Menu</a></li>-->
-<!--                    <li><a href="#contacto">Contacto</a></li>-->
-<!--                </ul>-->
-<!--            </nav>-->
         </header>
 
         <section id="menu">
             <h2>Nossas Opções</h2>
             <ul>
-                <li class="item">
+                <li class="item" th:each="pizza : ${pizzas}">
                     <div>
-                        <a th:href="@{/cardapio/pedido}" class="item_link">
+                        <a class="item_link">
                             <img class="imagem" th:src="@{/image/pizzaDeMarguerita.jpg}">
                         </a>
                     </div>
@@ -34,38 +27,6 @@
                             <h3>Pizza Margarita</h3>
                         </a>
                         <p>Tomate, mozzarella, albahaca fresca.</p>
-                    </div>
-                    <div class="item_dinheiro">
-                        <p>R$ 40,00</p>
-                    </div>
-                </li>
-                <li class="item">
-                    <div>
-                        <a href="#" class="item_link">
-                            <img class="imagem" th:src="@{/image/pizzaDeMarguerita.jpg}">
-                        </a>
-                    </div>
-                    <div class="item_descricao">
-                        <a href="#" class="item_link">
-                            <h3>Pizza Pepperoni</h3>
-                        </a>
-                        <p>Tomate, mozzarella, pepperoni.</p>
-                    </div>
-                    <div class="item_dinheiro">
-                        <p>R$ 40,00</p>
-                    </div>
-                </li>
-                <li class="item">
-                    <div>
-                        <a href="#" class="item_link">
-                            <img class="imagem" th:src="@{/image/pizzaDeMarguerita.jpg}">
-                        </a>
-                    </div>
-                    <div class="item_descricao">
-                        <a href="#" class="item_link">
-                            <h3>Pizza Vegetariana</h3>
-                        </a>
-                        <p>Tomate, mozzarella, champiñones, pimientos, cebolla, aceitunas.</p>
                     </div>
                     <div class="item_dinheiro">
                         <p>R$ 40,00</p>

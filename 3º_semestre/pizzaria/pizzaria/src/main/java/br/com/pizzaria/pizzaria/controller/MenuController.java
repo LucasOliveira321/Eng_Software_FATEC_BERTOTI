@@ -3,8 +3,6 @@ package br.com.pizzaria.pizzaria.controller;
 import br.com.pizzaria.pizzaria.domain.pizza.Pizza;
 import br.com.pizzaria.pizzaria.domain.pizza.PizzaService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatusCode;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,9 +18,10 @@ public class MenuController {
     private PizzaService pizzaService;
 
     @GetMapping(value = "/pizza")
-    public ResponseEntity<List<Pizza>> menu(){
+    public List<Pizza> menu(){
+        //model.addAttribute("pizzas", pizzaService.buscaTodasPizza());
         List<Pizza> pizzas = pizzaService.buscaTodasPizza();
-        return new ResponseEntity<>(pizzas, HttpStatusCode.valueOf(200));
+        return pizzas;
     }
 
     @GetMapping("/pedido")
