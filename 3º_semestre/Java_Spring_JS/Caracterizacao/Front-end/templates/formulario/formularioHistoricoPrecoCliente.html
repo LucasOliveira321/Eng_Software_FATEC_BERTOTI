@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar Tabela de Preço</title>
+    <link rel="stylesheet" href="/static/css/reset.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script src="/static/javaScript/template.js" defer></script>
+</head>
+<body>
+    
+    <div id="template"></div>
+
+    <div>
+        <h1 class="title">Adicionar Tabela de Preço</h1>
+    </div>
+    <hr>
+    <table class="table">
+        <thead class="thead">
+            <tr class="tr">
+                <th class="th">CÓDIGO</th>
+                <th class="th">CLIENTE</th>
+                <th class="th">STATUS</th>
+                <th class="th">INFORMAR PREÇO</th>
+            </tr>
+        </thead>
+        <tbody class="tbody">
+            <tr th:each="cliente : ${cliente}">
+                <td class="td codigo" th:text="${cliente.id}"></td>
+                <td class="td nome" th:text="${cliente.nomeEmpresa}"></td>
+                <td class="td status" th:text="${cliente.status}"></td>
+                <td class="td editar">
+                    <a th:href="@{/historico_preco_produto/adicionar_preco?id={id}(id=${cliente.id})}" class="editar_itens">PREÇO</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>

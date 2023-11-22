@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adicionar Imagem</title>
+  <link rel="stylesheet" href="/static/css/reset.css">
+  <link rel="stylesheet" href="/static/css/style.css">
+  <script src="/static/javaScript/template.js" defer></script>
+</head>
+<body>
+  <div id="template"></div>
+  <div>
+    <h1 class="title">Adicionar Imagem</h1>
+  </div>
+  <hr>
+  <div class="container">
+    <form method="post" enctype="multipart/form-data" class="form">
+      <div>
+        <label for="caracterizacaoId" class="form_label">ID da Caracterização</label>
+        <select id="caracterizacaoId" name="caracterizacaoId" class="form_select" >
+          <option value="null">Selecionar a caracterização</option>
+          <option th:each="carac : ${caracterizacao}"
+                  th:text="${carac.modelo}"
+                  th:value="${carac.id}">
+          </option>
+        </select>
+<!--          <div th:each="carac : ${caracterizacao}">-->
+<!--            <label class="form_label">Part Number</label>-->
+<!--            <p th:text="${carac.partNumber}"></p>-->
+<!--            <label class="form_label">Fabricante</label>-->
+<!--            <p th:text="${carac.fabricante}"></p>-->
+<!--          </div>-->
+      </div>
+      <div>
+        <label for="file" class="form_label">Arquivo</label>
+        <input id="file" name="file" class="form_input" type="file">
+      </div>
+
+      <div class="form_div">
+        <input class="form_button" type="submit" value="Salvar">
+      </div>
+    </form>
+  </div>
+</body>
+</html>

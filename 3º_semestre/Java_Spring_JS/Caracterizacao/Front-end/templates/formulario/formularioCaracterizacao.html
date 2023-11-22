@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastrar Caracterização</title>
+  <link rel="stylesheet" href="/static/css/reset.css">
+  <link rel="stylesheet" href="/static/css/style.css">
+  <script src="../../static/javaScript/template.js" defer></script>
+</head>
+<body>
+
+  <div id="template"></div>
+  
+  <div>
+    <h1 class="titulo">Nova Caracterização</h1>
+  </div>
+  <hr>
+  <div class="container">
+    <form class="formulario" id="form">
+      <div>
+        <label for="fabricante" class="formulario_label">Fabricante</label>
+        <input id="fabricante" name="fabricante" class="formulario_input" type="text" minlength="3" required>
+      </div>
+      <div>
+        <label for="partNumber" class="formulario_label">Part Number</label>
+        <input id="partNumber" name="partNumber" class="formulario_input" type="text" minlength="2" required>
+      </div>
+      <div>
+        <label for="modelo" class="formulario_label">Modelo</label>
+        <input id="modelo" name="modelo" class="formulario_input" type="text" minlength="2" required>
+      </div>
+      <div>
+        <label for="pesoEquipamento" class="formulario_label">Peso</label>
+        <input id="pesoEquipamento" name="pesoEquipamento" class="formulario_input" type="text" required>
+        <span id="peso-erro"></span>
+      </div>
+      <div>
+        <label class="formulario_label">Dimensão</label>
+        <div class="alinha_row">
+          <div class="espaco">
+            <label for="alturaCm" class="formulario_label">Altura (cm)</label>
+            <input id="alturaCm" name="alturaCm" class="formulario_input" type="text" required>
+          </div>
+          <div class="espaco">
+            <label for="larguraCm" class="formulario_label">Largura (cm)</label>
+            <input id="larguraCm" name="larguraCm" class="formulario_input" type="text" required>
+          </div>
+          <div class="espaco">
+            <label for="comprimentoCm" class="formulario_label">Comprimento (cm)</label>
+            <input id="comprimentoCm" name="comprimentoCm" class="formulario_input" type="text" required>
+          </div>
+        </div>
+      </div>
+      <div>
+        <label for="executor" class="formulario_label">Responsável pela Execução</label>
+        <select id="executor" name="executor" class="formulario_input" required>
+          <option value="null">Selecionar o Responsável</option>
+        </select>
+      </div>
+      <div>
+        <label for="acompanhante" class="formulario_label">Responsável pelo Acompanhamento</label>
+        <select id="acompanhante" name="acompanhante" class="formulario_input" required>
+          <option value="null">Selecionar o Responsável</option>
+        </select>
+      </div>
+      <div>
+        <label for="tempoProcessamentoHora" class="formulario_label">Tempo de Processamento (Em horas)</label>
+        <input id="tempoProcessamentoHora"  name="tempoProcessamentoHora" class="formulario_input" type="text" required>
+      </div>
+      <div>
+        <label for="produto" class="formulario_label">Classificação do material</label>
+        <select id="produto" name="produto" class="formulario_select" required>
+          <option value="null">Selecione a classificação</option>
+        </select>
+      </div>
+      <div>
+        <label for="observacao" class="formulario_label">Observação (Não Obrigatório)</label>
+        <input id="observacao" name="observacao" class="formulario_input" type="text">
+      </div>
+      <div class="formulario_div">
+        <input class="formulario_button" type="submit" value="Cadastrar" id="botao">
+      </div>
+    </form>
+  </div>
+  <script src="../../static/javaScript/formulario/caracterizacao/caracterizacao.js" type="module"></script>
+  
+</body>
+</html>

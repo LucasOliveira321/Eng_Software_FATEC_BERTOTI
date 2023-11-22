@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta Apontamento</title>
+    <link rel="stylesheet" href="/static/css/reset.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script src="../../static/javaScript/template.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="../../static/javaScript/consulta/apontamento/apontamento.js" defer></script>
+</head>
+<body>
+
+    <div id="template"></div>
+
+    <div>
+        <h1 class="titulo">Consulta Composição</h1>
+    </div>
+
+    <hr>
+
+    <div class="container-lg">
+        <div class="formulario_div mb-3">
+            <select class="form-select form-select-lg mb-3" id="composicao">
+                <option value="null">Selecionar Composição</option>
+            </select>
+            <button class="formulario_button" id="consulta">
+                Consultar
+            </button>
+        </div>
+
+        <div class="mb-3 row">
+            <label for="kgTotal" class="col-sm-2 col-form-label">kg Total:</label>
+            <div class="col-sm-10">
+            <input id="kgTotal" name="kgTotal" type="text" readonly class="form-control-plaintext" value="...">
+            </div>
+        </div>
+
+        <div class="mb-3 row">
+            <label for="kgApontado" class="col-sm-2 col-form-label">kg apontado:</label>
+            <div class="col-sm-10">
+            <input id="kgApontado" name="kgApontado" type="text" readonly class="form-control-plaintext"  value="...">
+            </div>
+        </div>
+
+        <div class="mb-3 row">
+            <label for="saldoOrdem" class="col-sm-2 col-form-label">Saldo da Ordem:</label>
+            <div class="col-sm-10">
+            <input id="saldoOrdem" name="saldoOrdem" type="text" readonly class="form-control-plaintext"  value="...">
+            </div>
+        </div>
+
+        <table class="tabela">
+            <thead>
+                <tr>
+                    <th class="cabecalho">DATA REGISTRO</th>
+                    <th class="cabecalho">CODIGO DO PRODUTO</th>
+                    <th class="cabecalho">DESCRIÇÃO</th>
+                    <th class="cabecalho">PESO</th>
+                    <th class="cabecalho">%</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+
+            </tbody>
+        </table>
+
+    </div>
+
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

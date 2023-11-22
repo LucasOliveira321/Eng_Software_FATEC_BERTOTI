@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head id="head">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta caracterização</title>
+    <link rel="stylesheet" href="/static/css/reset.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script src="../../static/javaScript/template.js" defer></script>
+    <script src="../../static/javaScript/consulta/caracterizacao/caracterizacao.js" defer></script>
+</head>
+<body>
+    <div id="template"></div>
+    <div>
+        <h1 class="titulo">Consulta Caracterização</h1>
+    </div>
+    <hr>
+    <table class="tabela">
+        <thead class="thead">
+            <tr>
+                <th class="cabecalho">EDITAR</th>
+                <th class="cabecalho">STATUS</th>
+                <th class="cabecalho">DATA DE CRIAÇÃO</th>
+                <th class="cabecalho">FABRICANTE</th>
+                <th class="cabecalho">PART NUMBER</th>
+                <th class="cabecalho">MODELO</th>
+                <th class="cabecalho">EXECUTOR</th>
+                <th class="cabecalho">ACOMPANHANTE</th>
+                <th class="cabecalho">PRODUTO</th>
+                <th class="cabecalho">PESO</th>
+                <th class="cabecalho">LARGURA</th>
+                <th class="cabecalho">ALTURA</th>
+                <th class="cabecalho">COMPRIMENTO</th>
+                <th class="cabecalho">TEMPO DE PROCESSAMENTO</th>
+                <th class="cabecalho">OBSERVAÇÃO</th>
+            </tr>
+        </thead>
+        <tbody id="tabela">
+            
+        </tbody>
+    </table>
+
+    <div class="modal" tabindex="-1" id="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title teste_PodeApagar">Abrir Composicao</h5>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        
+                    </div>
+                    <form class="formulario" id="form">
+        
+                        <label for="idCaracterizacao" class="formulario_label" id="id"></label>
+                        <input id="idCaracterizacao" name="idCaracterizacao" type="text" readonly>
+
+                        <label for="idUsuario" class="formulario_label">Planejador</label>
+                        <select id="idUsuario" name="idUsuario" class="formulario_input" required>
+                            <option value="null">Selecionar o planejador</option>
+                        </select>
+
+                        <button class="formulario_button" id="abrirComposicao">Abrir Composicao</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>    
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

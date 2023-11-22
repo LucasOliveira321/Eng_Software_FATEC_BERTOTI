@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastrar Familia de Material</title>
+  <link rel="stylesheet" href="/static/css/reset.css">
+  <link rel="stylesheet" href="/static/css/style.css">
+  <script src="/static/javaScript/template.js" defer></script>
+</head>
+<body>
+
+  <div id="template"></div>
+
+  <div>
+    <h1 class="titulo">Cadastrar Familia de Materiais</h1>
+  </div>
+  <hr>
+  <div class="container">
+    <form class="formulario" id="form">
+      <div>
+        <label for="codigo" class="formulario_label">Código</label>
+        <input id="codigo" name="codigo" class="formulario_input" type="text" placeholder="Preencher código com 2 ou 3 dígitos" minlength="2" maxlength="3" required>
+      </div>
+
+      <div>
+        <label for="descricao" class="formulario_label">Nome da Familia de Materiais</label>
+        <input id="descricao" name="descricao" class="formulario_input" type="text" minlength="3" required>
+      </div>
+
+      <div class="formulario_div">
+        <input class="formulario_button" type="submit" value="Salvar">
+      </div>
+    </form>
+  </div>
+  <script src="/static/javaScript/formulario/familiaDeMaterial/familiaDeMaterial.js" type="module"></script>
+</body>
+</html>

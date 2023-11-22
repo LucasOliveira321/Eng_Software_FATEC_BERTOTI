@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastrar Histórico Preço</title>
+  <link rel="stylesheet" href="/static/css/reset.css">
+  <link rel="stylesheet" href="/static/css/style.css">
+  <script src="/static/javaScript/template.js" defer></script>
+</head>
+<body>
+
+  <div id="template"></div>
+
+  <div>
+    <h1 class="title">Cadastrar Histórico de Preço</h1>
+  </div>
+  <hr>
+  <div class="container">
+    <form method="post" class="form">
+      <div>
+        <label for="tabelaId" class="form_label">Tabela de Preço</label>
+        <select id="tabelaId" name="tabelaId"  class="form_select">
+          <option value="null">Selecionar a Tabela</option>
+          <option th:each="tabelas : ${tabela}"
+                  th:text="${tabelas.descricao}"
+                  th:value="${tabelas.id}"/>
+        </select>
+      </div>
+      <div>
+        <label for="dataCotacao" class="form_label">Data da Cotação</label>
+        <input id="dataCotacao" name="dataCotacao" type="date" class="form_input">
+      </div>
+      <div>
+        <label for="codProduto" class="form_label">Código do Produto</label>
+        <select id="codProduto" name="codProduto" class="form_select">
+          <option value="null">Selecionar o produto</option>
+          <option th:each="produtos : ${prod}"
+                  th:text="${produtos.descricao}"
+                  th:value="${produtos.codProduto}"/>
+        </select>
+      </div>
+      <div>
+        <label for="valorKg" class="form_label">Valor do KG</label>
+        <input id="valorKg" name="valorKg" type="text" class="form_input">
+      </div>
+      <div class="form_div">
+        <input class="form_button" type="submit" value="Selecionar">
+      </div>
+    </form>
+  </div>
+  
+</body>
+</html>

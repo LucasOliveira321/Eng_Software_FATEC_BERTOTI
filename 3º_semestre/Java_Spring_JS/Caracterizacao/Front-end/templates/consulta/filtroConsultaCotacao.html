@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consulta Cotação</title>
+  <link rel="stylesheet" href="/static/css/reset.css">
+  <link rel="stylesheet" href="/static/css/style.css">
+  <script src="/static/javaScript/template.js" defer></script>
+</head>
+<body>
+  
+  <div id="template"></div>
+
+  <div>
+    <h1 class="title">Consulta Cotação</h1>
+  </div>
+  <hr>
+  <div class="container">
+
+      <div class="aling_row">
+        <div>
+          <label for="dataInicial" class="form_label">Data Inicial</label>
+          <input id="dataInicial" name="dataInicial" class="form_input" type="date">
+        </div>
+        <div>
+          <label for="dataFinal" class="form_label">Data Final</label>
+          <input id="dataFinal" name="dataFinal" class="form_input" type="date">
+        </div>
+      </div>
+      <div>
+        <label for="produto" class="form_label">Produto</label>
+        <select id="produto" name="produto"  class="form_select">
+          <option value="null">Selecionar o Produto</option>
+          <option th:each="produto : ${prod}"
+                  th:text="${produto.descricao}"
+                  th:value="${produto.codProduto}"/>
+        </select>
+      </div>
+      <div class="form_div">
+        <a th:href="@{/historico_preco_produto/relatorio}">
+          <input class="form_button" type="submit" value="Consultar">
+        </a>
+      </div>
+
+  </div>
+  
+</body>
+</html>

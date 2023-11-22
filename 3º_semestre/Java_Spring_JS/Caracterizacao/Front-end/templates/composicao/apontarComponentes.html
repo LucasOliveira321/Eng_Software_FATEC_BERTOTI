@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Composição</title>
+  <link rel="stylesheet" href="../../static/css/reset.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="../../static/css/style.css">
+  <script src="../../static/javaScript/template.js" defer></script>
+</head>
+<body>
+  
+  <div id="template"></div>
+
+  <div>
+    <h1 class="titulo">Montar a composição</h1>
+  </div>
+  <hr>
+  <div class="container-md">
+    <form class="formulario" id="form">
+      
+      <div>
+        <label for="idComposicao" class="formulario_label">Composição</label>
+        <select id="idComposicao" name="idComposicao" class="formulario_input">
+          <option value="null">Selecionar a Composição</option>
+        </select>
+      </div>
+
+      <div class="container text-center">
+        <div class="row">
+
+          <div class="col">
+            <label for="idCaracterizacao" class="form-label">ID Caracterização: </label>
+            <div class="col-sm-10">
+              <input id="idCaracterizacao" name="idCaracterizacao" type="text" readonly class="form-control-plaintext"  value="...">
+            </div>
+          </div>
+
+          <div class="col">
+            <label for="partnumber" class="form-label">PN: </label>
+            <div class="col-sm-10">
+              <input id="partnumber" name="partnumber" type="text" readonly class="form-control-plaintext"  value="...">
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <label for="fabricante" class="form-label">Fabricante: </label>
+            <div class="col-sm-10">
+              <input id="fabricante" name="fabricante" type="text" readonly class="form-control-plaintext"  value="...">
+            </div>
+          </div>
+          
+          <div class="col">
+            <label for="modelo" class="form-label">Modelo: </label>
+            <div class="col-sm-10">
+              <input id="modelo" name="modelo" type="text" readonly class="form-control-plaintext"  value="...">
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          
+          <div class="col">
+            <label for="pesoEquipamento" class="form-label">KG Total: </label>
+            <div class="col-sm-10">
+              <input id="pesoEquipamento" name="pesoEquipamento" type="text" readonly class="form-control-plaintext"  value="0.000">
+            </div>
+          </div>
+
+          <div class="col">
+            <label for="saldoComposicao" class="form-label">KG Saldo: </label>
+            <div class="col-sm-10">
+              <input id="saldoComposicao" name="saldoComposicao" type="text" readonly class="form-control-plaintext"  value="0.000">
+            </div>
+          </div>
+
+        </div>
+
+      <div>
+        <label for="idUsuario" class="formulario_label">Usuario</label>
+        <select id="idUsuario" name="idUsuario" class="formulario_input">
+          <option value="null">Selecionar um usuario</option>
+        </select>
+      </div>
+
+      <div>
+
+        <div class="alinha_row">
+
+          <div class="espaco">
+            <label for="codProduto" class="formulario_label">Produto</label>
+            <select id="codProduto" name="codProduto" class="formulario_input">
+              <option value="null">Selecionar o produto</option>
+            </select>
+          </div>
+
+          <div class="espaco">
+            <label for="kgComponente" class="formulario_label">Peso</label>
+            <input id="kgComponente" name="kgComponente" class="formulario_input" type="text">
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="formulario_div">
+        <input class="formulario_button" type="submit" value="Salvar">
+      </div>
+
+    </form>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script src="../../static/javaScript/composicao/composicao.js" type="module"></script>
+</body>
+</html>
