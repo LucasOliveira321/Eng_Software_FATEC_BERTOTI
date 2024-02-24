@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6f385e9b-d99d-4fad-836c-ae1910ad1e59" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Strategy/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Strategy/.idea/Strategy.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Strategy/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Strategy/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Strategy/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Strategy/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Strategy/AntiPattern/Alimentacao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Strategy/AntiPattern/Animal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Strategy/AntiPattern/Cavalo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Strategy/AntiPattern/Gato.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Strategy/AntiPattern/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Strategy/AntiPattern/Tipo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Strategy/Pattern/Alimentacao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Strategy/Pattern/Animal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Strategy/Pattern/Cavalo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Strategy/Pattern/Gato.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Strategy/Pattern/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Strategy/Pattern/Tipo.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="2cnBbAIrGxk0hf4ZanvjxlIdSIX" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/lucas.oliveira/Desktop/Repositórios/Eng_Software_FATEC_BERTOTI/4°_semestre/Strategy"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6f385e9b-d99d-4fad-836c-ae1910ad1e59" name="Changes" comment="" />
+      <created>1708737530806</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1708737530806</updated>
+    </task>
+    <servers />
+  </component>
+</project>
