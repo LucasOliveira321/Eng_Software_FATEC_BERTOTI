@@ -10,6 +10,9 @@ public class Main {
         jornal.seguir(televisao);
         jornal.seguir(revista);
         jornal.seguir(radio);
+
+        jornal.pararDeSeguir(revista);
+
         jornal.enviarNoticia();
     }
 }
