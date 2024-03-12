@@ -4,20 +4,17 @@ public class Main {
     public static void main(String[] args) {
 
         Animal cavalo = new Animal("Cavalo");
-        cavalo.setTipo(Tipo.PRESA);
+        cavalo.setAlimentacao(Alimentacao.MATO);
 
         Animal coelho = new Animal("Coelho");
-        coelho.setTipo(Tipo.PRESA);
+        coelho.setAlimentacao(Alimentacao.CENOURA);
 
         Animal gato = new Animal("Gato");
-        gato.setTipo(Tipo.PREDADOR);
+        gato.setAlimentacao(Alimentacao.CARNE);
 
         Zoologico zoo = new Zoologico("Zoo");
-        zoo.colocarNoHabitat(cavalo);
-        zoo.colocarNoHabitat(coelho);
-        zoo.colocarNoHabitat(gato);
-
-        zoo.mostraAnimais();
-
+        zoo.alimentarAnimal(cavalo);
+        zoo.alimentarAnimal(coelho);
+        zoo.alimentarAnimal(gato);
     }
 }

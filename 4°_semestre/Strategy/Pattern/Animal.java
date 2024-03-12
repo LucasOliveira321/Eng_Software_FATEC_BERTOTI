@@ -1,31 +1,28 @@
 package Pattern;
 
-public class Animal implements InstintoAnimal {
+public class Animal implements HabitoAnimal {
     private String nome;
-    private Tipo tipo;
+    private Alimentacao alimentacao;
 
     public Animal(String nome){
         this.nome=nome;
     }
 
     @Override
-    public void setTipo(Tipo tipo) {
-        this.tipo=tipo;
+    public void setAlimentacao(Alimentacao alimento) {
+        this.alimentacao=alimento;
     }
 
     @Override
-    public Tipo getTipo() {
-        return this.tipo;
-    }
-
-    @Override
-    public String getAnimal(){
-        return toString();
+    public void alimentar() {
+        StringBuilder string = new StringBuilder();
+        string.append(this.nome).append(", comeu: ").append(this.alimentacao.toString());
+        System.out.println(string);
     }
 
     @Override
     public String toString() {
         return "nome='" + this.nome + '\'' +
-                ", tipo=" + this.tipo;
+                ", alimento=" + this.alimentacao;
     }
 }
