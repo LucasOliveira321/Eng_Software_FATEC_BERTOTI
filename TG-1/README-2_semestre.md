@@ -1,7 +1,9 @@
 # Lucas Augusto Oliveira de Souza
 
 ## Introdução
-Meu nome é Lucas, no momento em que estou redigindo este texto sou estudante no curso de banco de dados, formado em Gestão da Produção Industrial pela Fatec e Pós-Graduado em Administração de Empresas, mas sempre tive inclinações para a área de exatas onde me chamava mais atenção. Primeira linguagem que eu estudei foi Javascript pois é bem flexível quanto a suas aplicações, e minha fonte de estudo sempre foi através de cursos pela internet até ingressar na universidade e aprender Python e Java. 
+Meu nome é Lucas Augusto Oliveira de Souza, estudante de Tecnólogo em Banco de Dados com background multidisciplinar em Gestão da Produção Industrial (FATEC) e Pós-Graduação em Administração de Empresas. Minha transição para a área de tecnologia foi motivada por uma sólida aptidão em exatas e pelo interesse em resolver problemas complexos através da programação.
+
+Iniciei minha jornada no desenvolvimento com JavaScript, selecionando esta linguagem devido à sua versatilidade e ampla adoção no mercado de tecnologia. Antes de ingressar na graduação, adquiri conhecimentos fundamentais através de cursos online especializados. Atualmente, no ambiente acadêmico, estou expandindo meu repertório técnico com Python e Java, focando no desenvolvimento de soluções robustas e escaláveis.
 
 ## Redes sociais
 * [Github](https://github.com/LucasOliveira321)
@@ -24,7 +26,13 @@ Conhecimentos desenvolvidos na FATEC no 2º semestre foram:
 
 ## Portfolio
 ### 2º Semestre - Controle de Jornada
-No primeiro semestre de 2023, a empresa [2RP](https://2rpnet.com.br/) pediu um programa para controlar as horas extras e sobreaviso dos funcionarios, onde tinha varias funcionalidades como adicionar usuario/cliente/CR(Centro de Resultado), adicionar uma hora extra/sobreaviso, aprovar/reprovar horas extras/sobreaviso, entre outras funcionalidades. Assim, a empresa [2RP](https://2rpnet.com.br/) teria uma melhor visibilidade das horas extras/sobreaviso de seus funcionarios. Para saber mais sobre o projeto visite nosso [Repositório no Github](colocar url aqui).
+No primeiro semestre de 2023, a empresa 2RP solicitou o desenvolvimento de um sistema de controle de jornada, voltado ao gerenciamento de horas extras e sobreaviso dos colaboradores.
+O sistema foi projetado para oferecer à empresa uma visão centralizada e automatizada do tempo de trabalho de seus funcionários, contemplando funcionalidades como:
+- Cadastro de usuários, clientes e CR (Centro de Resultado);
+- Registro de horas extras e períodos de sobreaviso;
+- Fluxo de aprovação e reprovação de solicitações;
+- Geração de relatórios e indicadores para análise gerencial.
+O projeto teve como principal objetivo otimizar o controle operacional e melhorar a transparência na gestão de jornadas, reduzindo falhas manuais e aumentando a precisão dos dados.
 
 <div> Mockup do projeto </div>
 <details>
@@ -41,12 +49,46 @@ No 2° Semestre as tecnologias usadas foram:
 ##### **Front End** 
   * HTML
   * CSS
-  * JavaScript
 ##### **Banco de Dados** 
-  * MySQL
+  * SQL
   
 #### Contribuições Pessoais
-* Aplicação do Java FX. <details> Durante o segundo semestre da faculdade, desenvolvi com meu grupo uma Aplicação Desktop em , onde tive que aprender a utilizar o framework e suas dependencias, querys no banco de dados. </details>
+* Desenvolvimento em Java Desktop. 
+<details> 
+  <summary>Ver detalhes</summary> 
+  No primeiro semestre de 2023, mergulhei no estudo de Java para Desktop, 
+  explorando desde a sintaxe básica até tópicos intermediários, como programação orientada a objetos. Para fixar o 
+  conhecimento, coloquei a mão na massa criando projetos pequenos, o que me ajudou a entender melhor como a teoria 
+  se aplica no desenvolvimento de software. 
+</details>
+
+* Desenvolvimento de interfaces com JavaFX. 
+<details>
+ <summary>Ver detalhes</summary> 
+  No primeiro semestre de 2023, estudei o JavaFX, framework 
+  para desenvolvimento de GUIs em Java. Dominei a criação de componentes visuais (botões, tabelas, formulários) 
+  e compreendi sua arquitetura baseada em controladores, que permite a separação entre lógica de negócio 
+  e camada de apresentação.
+</details>
+
+* Integração de Java com banco de dados 
+<details>
+  <summary>Ver detalhes</summary>
+  No primeiro semestre de 2023, implementei a integração entre 
+  Java e MySQL para persistência de dados em aplicações. Utilizei o JDBC (Java Database Connectivity) para 
+  estabelecer conexões, executar consultas SQL e gerenciar transações. Desenvolvi operações 
+  CRUD (Create, Read, Update, Delete) para manipulação eficiente de registros, além de otimizar a construção 
+  de queries para melhor desempenho e clareza.
+</details>
+
+* Versionamento e colaboração com GitHub. 
+<details> 
+  <summary>Ver detalhes</summary>  
+  No segundo semestre de 2023, aprimorei minhas habilidades 
+  com o GitHub, adotando-o como ferramenta central para controle de versão e gestão de projetos. 
+  Criamos branches, separando as funcionalidades para que as atividades possam ser trabalhadas em paralelo, separando o projeto em
+  sprints, criando issues para rastreamento de atividades, otimizando a colaboração em equipe e o ciclo de desenvolvimento. 
+</details>
 
 ##### Diagrama MER 
 <details>
@@ -56,12 +98,7 @@ No 2° Semestre as tecnologias usadas foram:
 </details>
 
 ### Hard Skills
-No segundo semestre do curso, adquiri habilidades essenciais para desenvolver projetos criando uma API em Java FX com conexão DAO, com querys personalizadas para trazer as informações 
-necessárias para gerar relatórios, 
-aproveitando as vantagens do Java FX para criar sistemas funcionais. E o frontend em html e css com javascript requisitando a API com requisições usando Javascript puro e administrando o token JWT para
-carregar nas requições necessárias para o desenvolvimento de aplicações web interativas e dinâmicas.
+Durante o primeiro semestre de 2023, desenvolvi competências sólidas em Java, incluindo programação orientada a objetos e criação de projetos práticos. Aprendi a utilizar JavaFX para o desenvolvimento de interfaces gráficas, focando na criação de componentes interativos e na separação de lógica de negócio da apresentação. Além disso, estabeleci conexões entre Java e MySQL utilizando JDBC, realizando operações CRUD e escrevendo consultas SQL para trazer as informações necessárias para atender os requisitos do projeto. Essas habilidades me permitiram criar aplicativos funcionais e bem estruturados.
 
 ### Soft Skills
-No segundo semestre do curso, melhorei minhas habilidades em resolução de conflitos, atuando como desenvolvedor precisei de ajuda dos meus colegas e colaborar com eles para a entrega das funcionalidades. Contribuí na elaboração de 
-issues que impulsionaram a evolução das regras de negócio. Nesse processo, ferramentas como GitHub e Jira foram 
-essenciais para a organização e gestão das demandas do time.
+No primeiro semestre de 2023, melhorei significativamente minhas habilidades de comunicação, reconhecendo a importância de uma transmissão clara e eficaz de informações. Também me familiarizei com ferramentas como Figma, Canva, Jira e GitHub, que facilitaram a gestão de projetos e a colaboração em equipe, melhorando a comunicação e a organização das tarefas.
